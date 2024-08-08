@@ -1,0 +1,471 @@
+@media only screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    /* Puedes agregar aquí los estilos específicos para dispositivos móviles */
+
+    body{
+        background-color: #ff4c4d;
+    }
+
+    .mainHome{
+        height: auto;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; */
+    }
+
+    .mainInfoContainer{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .mainHome h2{
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .mainHome h1{
+        font-size: 35px;
+        font-weight: bold;
+        width: 90%;
+
+    }
+
+    .mainHome p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .btnSangre{
+        margin-top: 30px;
+        background-color: white;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 80%;
+        height: 50px;
+        color: #ff4c4d;
+        font-weight: bold;
+        font-size: 22px;
+        box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerImg{
+        display: none;
+    }
+
+    .homeBlood{
+        background-color: #ff4c4d;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .homeBlood h2{
+        margin-bottom: 20px;
+    }
+
+    select{
+        width: 80%;
+        color: #ff4c4d;
+        font-weight: bold;
+        margin-bottom: 5vh;
+        border-radius: 10px;
+    }
+
+    .containerSangre{
+        width: 80%;
+        height: auto;
+        margin-bottom: 10vh;
+    }
+
+    .tipoSangre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        text-align: left;
+    }
+
+    .tipoSangre h3{
+        width: 100%;
+    }
+
+    .puedeRecibirTipo{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tipoContainer{
+        width: 100px;
+        height: 100px;
+        background-color: #ffeded;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .tipoContainer h6{
+        color: #ff4c4d;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .tipoSangreNegativo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .tipoSangreNegativo h5{
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .tipoSangreNegativo p{
+        font-size: 18px;
+    }
+
+    .donaOrden{
+        font-weight: bold;
+    }
+
+  
+
+    .containerRequisitos{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .containerRequisitos img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .containerRequisitos h3{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .containerRequisitos h4{
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .containerRequisitos p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .btnRequisitos{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: white;
+        color: #ff4c4d;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 60%;
+        height: 50px;
+        font-weight: bold;
+        font-size: 22px;
+        box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        background-color: #ff4c4d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header{
+        height: 8vh;
+        width: 100%;
+        background-color: #ec4043 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        list-style: none;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    ul li a:hover{
+        border-bottom: 2px solid white;
+    }
+
+    .mainHome{
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .mainInfoContainer{
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .mainHome h2{
+        font-size: 24px;
+        width: 60%;
+    }
+
+    .mainHome h1{
+        font-size: 35px;
+        font-weight: bold;
+        width: 60%;
+
+    }
+
+    .mainHome p{
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .btnSangre{
+        margin-top: 30px;
+        background-color: white;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 60%;
+        height: 50px;
+        color: #ff4c4d;
+        font-weight: bold;
+        font-size: 22px;
+        box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerImg{
+        margin-left: -50px;
+        background-color: #ffeded;
+        height: 320px;
+        width: 320px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerImg img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .homeBlood{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .homeBlood h2{
+        margin-bottom: 30px;
+    }
+
+    select{
+        width: 50%;
+        height: 50px;
+        color: #ff4c4d;
+        font-weight: bold;
+        margin-bottom: 5vh;
+        border-radius: 10px;
+    }
+
+    .containerSangre{
+        width: 50%;
+        height: auto;
+        margin-bottom: 10vh;
+    }
+
+    .tipoSangre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        text-align: left;
+        width: 100%;
+    }
+
+    .tipoSangre h3{
+        width: 100%;
+    }
+
+    .puedeRecibirTipo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tipoContainer{
+        width: 100px;
+        height: 100px;
+        background-color: #ffeded;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .tipoContainer h6{
+        color: #ff4c4d;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .tipoSangreNegativo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .tipoSangreNegativo h5{
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .tipoSangreNegativo p{
+        font-size: 18px;
+    }
+
+    .donaOrden{
+        font-weight: bold;
+    }
+
+  
+
+    .containerRequisitos{
+        height: 100vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .containerRequisitos img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .containerRequisitos h3{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .containerRequisitos h4{
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .containerRequisitos p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .btnRequisitos{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: white;
+        color: #ff4c4d;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 60%;
+        height: 50px;
+        font-weight: bold;
+        font-size: 22px;
+        box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(255,152,152,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+  

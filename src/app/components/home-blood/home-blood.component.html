@@ -1,0 +1,76 @@
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a [routerLink]="'#mainHome'" (click)="scrollTo('mainHome')">Home</a></li>
+      <li><a [routerLink]="'#section2'" (click)="scrollTo('homeBlood')">Cuadro compatibilidad</a></li>
+      <li><a [routerLink]="'#section3'" (click)="scrollTo('containerRequisitos')">Requisitos</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="mainHome" id="mainHome">
+  <div class="mainInfoContainer">
+    <h2>Te damos la bienvenida</h2>
+    <h1>Doná sangre y salva vidas</h1>
+    <p>¿Sabías que 9 de cada 10 personas necesitarán en algún momento de su vida una transfusión de sangre, para sí misma o para algún familiar? Para hacer un uso autosuficiente, donemos sangre en los lugares donde más se necesita siguiendo el stock sanguíneo en tiempo real.</p>
+    <button class="btnSangre">Doná ahora
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+          </svg>
+    </button>
+  </div>
+    <div class="containerImg">
+      <img src="assets/images/gota.png" alt="">
+    </div>
+</div>
+
+<div class="homeBlood" id="homeBlood">
+    <h2>¡Encontra tu compatibilidad!</h2>
+    <select class="form-select" aria-label="Default select example" (change)="seleccionarTipoSangre($event)">
+      <option selected disabled>Seleccionar tipo de sangre</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+  
+    <div *ngIf="tipoSangreSeleccionado" class="containerSangre">
+      <div class="tipoSangre">
+        <h3>Puede donar a:</h3>
+        <div class="puedeRecibirTipo">
+          <div class="tipoContainer" *ngFor="let tipo of puedeDonarA">
+            <h6>{{ tipo }}</h6>
+          </div>
+        </div>
+      </div>
+  
+      <div class="tipoSangre">
+        <h3>Puede recibir de:</h3>
+        <div class="puedeRecibirTipo">
+          <div class="tipoContainer" *ngFor="let tipo of puedeRecibirDe">
+            <h6>{{ tipo }}</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="tipoSangreNegativo" *ngIf="rhNegativo">
+        <h5>¡Sos Rh Negativo! <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="#efb810"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-confetti"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h2" /><path d="M5 4v2" /><path d="M11.5 4l-.5 2" /><path d="M18 5h2" /><path d="M19 4v2" /><path d="M15 9l-1 1" /><path d="M18 13l2 -.5" /><path d="M18 19h2" /><path d="M19 18v2" /><path d="M14 16.518l-6.518 -6.518l-4.39 9.58a1 1 0 0 0 1.329 1.329l9.579 -4.39z" /></svg></h5>
+        <p>Aproximadamente el 10% de la población es Rh Negativo y, por eso, cuando un paciente necesita este tipo de sangre, el Centro puede tener dificultad para obtenerla.
+        </p>
+        <p class="donaOrden">Acercate a donar. Hacelo por vos y por los demás. <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#ffffff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg></p>
+      </div>
+    </div>
+</div>
+<div class="containerRequisitos" id="containerRequisitos">
+    <img src="/assets/images/sangre.png" alt="">
+    <h3>¿Como saber si puedo donar?</h3>
+    <h4>Conoce los requisitos</h4>
+    <p>Donar es muy simple, seguro y rápido. ¡La extracción para donar dura menos de 10 minutos! Si nunca donaste, entrá acá para conocer los requisitos y las preguntas frecuentes que recibimos.</p>
+    <button class="btnRequisitos">Ver requisitos</button>
+</div>
+</body>
+
